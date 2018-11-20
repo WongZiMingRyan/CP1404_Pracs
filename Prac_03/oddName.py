@@ -15,8 +15,9 @@ def main():
 
 
 def print_name(name):
+    count = input("print every how many characters?")
     # print odd characters in name
-    print(name[::3])
+    print(name[::count])
 
 
 main()
