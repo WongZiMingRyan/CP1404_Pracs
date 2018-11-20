@@ -10,7 +10,6 @@ def main():
         return name
 
     name = get_name()
-
     print_name(name)
 
 
