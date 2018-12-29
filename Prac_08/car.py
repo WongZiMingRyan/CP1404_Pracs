@@ -32,4 +32,4 @@ class Car:
         return distance
 
     def __str__(self):
-        return "{}, {}km travelled".format(self.name, str(self.fuel), str(self.odometer,))
+        return "{}, {}km travelled, {} fuel remaining".format(self.name, str(self.odometer), str(self.fuel,))

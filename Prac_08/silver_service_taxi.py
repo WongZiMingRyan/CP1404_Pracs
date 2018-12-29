@@ -1,9 +1,9 @@
 from Practical.Prac_08.taxi import Taxi
+flagfall = 4.50
 
 
 class SilverServiceTaxi(Taxi):
     """Specialised version of a Car that includes fare costs."""
-
 
     def __init__(self, name, fuel, price_per_km, fanciness):
         """Initialise a Taxi instance, based on parent class Car."""
@@ -13,12 +13,12 @@ class SilverServiceTaxi(Taxi):
 
     def __str__(self):
         """Return a string like a Car but with current fare distance."""
-        flagfall = 4.50
+
         return "{} plus flagfall of ${:.2f}".format(super().__str__(), flagfall)
 
     def get_fare(self):
         """Return the price for the taxi trip."""
-        return self.price_per_km * self.current_fare_distance
+        return self.price_per_km * self.current_fare_distance + flagfall
 
     def start_fare(self):
         """Begin a new fare."""
