@@ -4,7 +4,7 @@ Testing demo using assert and doctest
 """
 
 import doctest
-from prac_06.car import Car
+from Practical.Prac_06.car import Car
 
 
 def repeat_string(s, n):
